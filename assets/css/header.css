@@ -1,6 +1,6 @@
 #navbar {
   
-    background-color: #568203;
+    background-color: #0c4dad;
     border-bottom-color: yellow;
     border-bottom-style: solid;
   
@@ -14,34 +14,29 @@
   }
 
   #active{
-    background-color: #568203;
+     
     border-right-color: yellow;
     border-right-style: solid;
   }
+
   #create{
-    border-color: #568203;
+    border-color: #1c1b8a;
     color:#568203;
+   
+   
 }
 #create:hover {
   background-color: #568203;
   color: yellow;
 }
+
 #table-head {
   background-color: #568203;
   border-bottom-color: yellow;
   border-bottom-style: solid;
   color: white;
 }
-#card {
-  border-bottom-color: rgb(204, 204, 54);
-  border-bottom-style: solid;
-  border-top-color: rgb(204, 204, 54);
-  border-top-style: solid;
-  border-left-color: #568203;
-  border-left-style: solid;
-  border-right-color: #568203;
-  border-right-style: solid;
-}
+
 #firstname {
   border-bottom-color: #568203;
   border-left-color: white;

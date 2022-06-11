@@ -1,5 +1,5 @@
-create a database name: "user_management";
+create a database name: "voting_system";
 
-import the 'user_management' sql file
+import the 'voting_system' sql file
 
 thanks for subscribing :) 

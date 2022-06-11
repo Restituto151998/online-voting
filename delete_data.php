@@ -1,13 +1,12 @@
 <?php
 include_once "./connection/Connect.php";
-
+session_start();
 //delete data
-$sql = "DELETE FROM users WHERE id='" . $_GET["id"] . "'";
+$sql = "DELETE FROM candidates WHERE id='" . $_GET["id"] . "'";
+mysqli_query($conn, "DELETE FROM votes WHERE candidate_id='" . $_GET["id"] . "'");
+mysqli_query($conn, "DELETE FROM scores WHERE candidates_id='" . $_GET["id"] . "'");
 if (mysqli_query($conn, $sql)) {
- 
-    header("location: ./users.php");
-} else {
-    echo "Error deleting record: " . mysqli_error($conn);
+    $_SESSION['success_message'] = "Candidate Deleted Successfully";
+    header("Location: candidates.php");
+    exit();
 }
-
-?>
